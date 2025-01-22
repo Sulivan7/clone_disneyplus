@@ -7,7 +7,6 @@
     }
 
     &__questions {
-
         &__item {
             background-color: #13151d;
             margin-bottom: 16px;
@@ -37,20 +36,21 @@
                 overflow: hidden;
                 padding: 0 24px;
                 transition: height, .5s ease;
+
+                a {
+                    color: #fff;
+                }
             }
 
             &--is-open {
                 .faq__questions__item__question::after {
                     content: '-';
                 }
+                
                 .faq__questions__item__answer {
                     height: auto;
                     padding-bottom: 24px;
                     transition: height, .5s ease;
-
-                    a {
-                        color: #fff;
-                    }
                 }
             }
         }
